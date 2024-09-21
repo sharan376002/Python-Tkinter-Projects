@@ -1,8 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 
 def sayhello():
     print("hello")
+
+def alert_driver():
+    messagebox.showwarning(window,"Speed Alert")
+
 
 window = tk.Tk()
 window.title("HELLO")
@@ -15,7 +20,7 @@ label.pack()
 entry = ttk.Entry( master=window)
 entry.pack()
 
-button = ttk.Button(master=window , text="say Hello", command=sayhello)  # lambada : print('hello)
+button = ttk.Button(master=window , text="say Hello", command=alert_driver)  # lambada : print('hello)
 button.pack()
 
 

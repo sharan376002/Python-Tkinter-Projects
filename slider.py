@@ -26,6 +26,7 @@ progress.pack()
 scrolled_text = scrolledtext.ScrolledText(window, width = 100, height = 5)
 scrolled_text.pack()
 
+
 exercise_int = tk.IntVar()
 exercise_progress = ttk.Progressbar(window, orient = 'vertical', variable = exercise_int)
 exercise_progress.pack()

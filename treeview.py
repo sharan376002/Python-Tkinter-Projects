@@ -29,13 +29,13 @@ for i in range(100):
 
 
 # events
-def item_select(_):
+def item_select():
 	print(tabel.selection())
 	for i in tabel.selection():
 		print(tabel.item(i)['values'])
 	# table.item(table.selection())
 
-def delete_items(_):
+def delete_items():
 	print('delete')
 	for i in tabel.selection():
 		tabel.delete(i)
